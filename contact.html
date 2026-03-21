@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — CBIT Learning</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="logo">CBIT<span> Learning</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="course.html">Courses</a>
+      <a href="course_details.html">Details</a>
+      <a href="login.html">Register / Login</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="section">
+  <div class="contact-layout">
+
+    <!-- LEFT: Contact Info -->
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>Have a question or need help? We're here for you. Reach out and we'll get back to you within 24 hours.</p>
+
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <h4>Address</h4>
+          <p>Aurexis Learning Pvt. Ltd.<br>HITEC City, Hyderabad — 500081<br>Telangana, India</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div>
+          <h4>Email</h4>
+          <p>support@aurexis.com<br>admissions@aurexis.com</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div>
+          <h4>Phone</h4>
+          <p>+91 98765 43210<br>Mon – Sat, 9 AM – 6 PM IST</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Contact Form -->
+    <div class="contact-form-card">
+      <h3>Send us a Message</h3>
+      <form onsubmit="return submitContact(event)" novalidate>
+        <div class="form-group">
+          <label for="c-name">Your Name</label>
+          <input type="text" id="c-name" placeholder="Full name">
+          <span class="error-msg" id="err-c-name">Please enter your name.</span>
+        </div>
+        <div class="form-group">
+          <label for="c-email">Email Address</label>
+          <input type="email" id="c-email" placeholder="you@example.com">
+          <span class="error-msg" id="err-c-email">Please enter a valid email.</span>
+        </div>
+        <div class="form-group">
+          <label for="c-subject">Subject</label>
+          <input type="text" id="c-subject" placeholder="How can we help?">
+          <span class="error-msg" id="err-c-subject">Please enter a subject.</span>
+        </div>
+        <div class="form-group">
+          <label for="c-message">Message</label>
+          <textarea id="c-message" placeholder="Write your message here..."></textarea>
+          <span class="error-msg" id="err-c-message">Please enter your message.</span>
+        </div>
+        <button type="submit" class="btn-submit">Send Message</button>
+        <div class="success-msg" id="contact-success">✅ Message sent! We'll get back to you soon.</div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <img src="learn.jpg" alt="CBIT Learning" style="height:60px; object-fit:contain; margin-bottom:12px; border-radius:8px; opacity:0.85;">
+  <p>© 2026 <strong>CBIT Learning</strong>. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

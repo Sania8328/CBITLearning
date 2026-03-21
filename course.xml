@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses>
+
+  <course>
+    <title>Full Stack Web Development</title>
+    <category>Development</category>
+    <instructor>John Carter</instructor>
+    <price>1999</price>
+    <rating>4.8</rating>
+    <duration>3 Months</duration>
+    <students>8400</students>
+  </course>
+
+  <course>
+    <title>Data Science and Machine Learning</title>
+    <category>Data Science</category>
+    <instructor>Sarah Mitchell</instructor>
+    <price>2999</price>
+    <rating>4.7</rating>
+    <duration>4 Months</duration>
+    <students>5200</students>
+  </course>
+
+  <course>
+    <title>Cloud Computing with AWS</title>
+    <category>Cloud</category>
+    <instructor>Raj Patel</instructor>
+    <price>3499</price>
+    <rating>4.9</rating>
+    <duration>2 Months</duration>
+    <students>12000</students>
+  </course>
+
+  <course>
+    <title>Artificial Intelligence Fundamentals</title>
+    <category>AI / ML</category>
+    <instructor>Priya Sharma</instructor>
+    <price>4499</price>
+    <rating>4.9</rating>
+    <duration>5 Months</duration>
+    <students>18500</students>
+  </course>
+
+  <course>
+    <title>React Native Mobile Development</title>
+    <category>Mobile</category>
+    <instructor>Alex Turner</instructor>
+    <price>2499</price>
+    <rating>4.6</rating>
+    <duration>2 Months</duration>
+    <students>3100</students>
+  </course>
+
+  <course>
+    <title>Ethical Hacking and Cybersecurity</title>
+    <category>Security</category>
+    <instructor>Neha Gupta</instructor>
+    <price>3999</price>
+    <rating>4.8</rating>
+    <duration>3 Months</duration>
+    <students>9700</students>
+  </course>
+
+</courses>

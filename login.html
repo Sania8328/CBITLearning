@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register / Login — CBIT Learning</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="logo">CBIT<span> Learning</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="course.html">Courses</a>
+      <a href="course_details.html">Details</a>
+      <a href="login.html" class="active">Register / Login</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="auth-wrapper">
+  <div class="auth-box">
+
+    <!-- Tabs -->
+    <div class="auth-tabs">
+      <button class="auth-tab active" onclick="switchTab('register', this)">Register</button>
+      <button class="auth-tab" onclick="switchTab('login', this)">Login</button>
+    </div>
+
+    <!-- REGISTER FORM -->
+    <div id="register" class="auth-form active">
+      <h2>Create Account</h2>
+      <p class="subtitle">Join thousands of learners today</p>
+
+      <form id="registerForm" onsubmit="return validateRegister(event)" novalidate>
+        <div class="form-group">
+          <label for="reg-name">Full Name</label>
+          <input type="text" id="reg-name" placeholder="Enter your full name">
+          <span class="error-msg" id="err-name">Please enter your full name.</span>
+        </div>
+        <div class="form-group">
+          <label for="reg-email">Email Address</label>
+          <input type="email" id="reg-email" placeholder="you@example.com">
+          <span class="error-msg" id="err-email">Please enter a valid email address.</span>
+        </div>
+        <div class="form-group">
+          <label for="reg-password">Password</label>
+          <input type="password" id="reg-password" placeholder="Min. 6 characters">
+          <span class="error-msg" id="err-password">Password must be at least 6 characters.</span>
+        </div>
+        <div class="form-group">
+          <label for="reg-confirm">Confirm Password</label>
+          <input type="password" id="reg-confirm" placeholder="Re-enter your password">
+          <span class="error-msg" id="err-confirm">Passwords do not match.</span>
+        </div>
+        <button type="submit" class="btn-submit">Create Account</button>
+        <div class="success-msg" id="reg-success">🎉 Registration successful! Welcome to Aurexis.</div>
+      </form>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <div id="login" class="auth-form">
+      <h2>Welcome Back</h2>
+      <p class="subtitle">Sign in to continue learning</p>
+
+      <form id="loginForm" onsubmit="return validateLogin(event)" novalidate>
+        <div class="form-group">
+          <label for="login-email">Email Address</label>
+          <input type="email" id="login-email" placeholder="you@example.com">
+          <span class="error-msg" id="err-login-email">Please enter a valid email address.</span>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" placeholder="Your password">
+          <span class="error-msg" id="err-login-password">Please enter your password.</span>
+        </div>
+        <button type="submit" class="btn-submit">Sign In</button>
+        <div class="success-msg" id="login-success">✅ Login successful! Redirecting...</div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <img src="learn.jpg" alt="CBIT Learning" style="height:60px; object-fit:contain; margin-bottom:12px; border-radius:8px; opacity:0.85;">
+  <p>© 2026 <strong>CBIT Learning</strong>. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
